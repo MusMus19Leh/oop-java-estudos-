@@ -1,0 +1,45 @@
+package com.mycompany.abajudeestudo;
+public class Abajudeestudo {
+    public static void main(String[] args){
+        Abaju3 c1 = new Abaju3();
+        c1.modelo = "-Estudo";
+        c1.cor = "-Preto";
+        c1.ligado= true;
+        c1.status();
+        c1.acender();
+    }
+}
+
+
+package com.mycompany.abajudeestudo;
+public class Abaju3 {
+    public String modelo;
+    public String cor;
+    public boolean ligado;
+    public void status(){
+        System.out.println("Qual o modelo? \n" + this.modelo);
+        
+        System.out.println("Qual a cor dele? \n" + this.cor);
+        
+        System.out.println("Ele pode ser aceso? \n" +this.ligado);
+    }
+    
+    public void acender(){
+        if (this.ligado == true){
+        System.out.println("Erro! o abajur queimou! \n");
+       } else {
+        System.out.println("Abajur ligado! \n");}        
+    }
+    
+    public void ligar(){
+        this.ligado = true;
+    }
+    public void ligado(){
+        this.ligado = false;
+    }
+
+    void desligar() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+       
+}
